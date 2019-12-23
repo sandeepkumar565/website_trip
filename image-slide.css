@@ -1,0 +1,75 @@
+.slider
+{
+	width: 800px;
+	height: 400px;
+	background: url(shimla.jpg);
+	margin: 100px auto;
+
+    animation: slide 20s infinite;
+}
+@keyframes slide
+{
+	25%{
+		background : url(shimla.jpg);
+	}
+	50%{
+		background : url(sandeep.jpg);
+	}
+	75%{
+		background : url(brahma-sarovar.jpg);
+	}
+	100%{
+		background : url(pune.jpg);
+	}
+}
+
+.outerbox
+{
+	width: 1600px;
+	overflow: hidden;
+    z-index: -1;
+}
+.innerbox
+{
+    position: relative;
+    width: 6400px;
+    animation: slide 20s infinite;
+    z-index: -1;
+
+}
+.innerbox img
+{
+    float: left;
+    z-index: -1;
+
+}
+@keyframes slide
+{
+	0%{
+		left: 0px;
+	}
+	20%{
+		left: 0px;
+	}
+	25%{
+		left: -1600px;
+	}
+	45%{
+		left: -1600px;
+	}
+	50%{
+		left: -3200px;
+	}
+	70%{
+		left: -3200px;
+	}
+	75%{
+		left: -4800px;
+	}
+	95%{
+		left: -4800px;
+	}
+	1000%{
+		left: -6400px;
+	}
+}

@@ -1,0 +1,46 @@
+body
+	{
+		background-image: url("homepage.jpg");
+		filter: blur(0px);
+		background-size: cover;
+		
+  		height: 100%;
+  		background-position: center;
+  		background-repeat: no-repeat;
+ 	    background-size: cover;
+	}
+	.button1 {
+	  position: fixed;	
+	  background-color: #4CAF50;
+	  color: white;
+	  padding: 20px;
+	  text-align: center;
+	  display: inline-block;
+	  font-size: 12px;
+	  margin: 4px 2px;
+	  margin-top: 370px;
+	  margin-left: 580px;
+	}
+
+	.button2 {
+	  position: fixed;	
+	  background-color: #4CAF50;
+	  color: white;
+	  padding: 20px;
+	  text-align: center;
+	  display: inline-block;
+	  font-size: 12px;
+	  margin: 4px 2px;
+	  margin-top: 370px;
+	  margin-left: 750px;
+	}
+
+	.logo{
+		position: absolute;
+		margin-top: 5;
+		margin-right: 5;
+
+	}
+
+	.button1 {border-radius: 30%;}
+	.button2 {border-radius: 30%;}
