@@ -1,0 +1,68 @@
+h1 {
+    text-align: center;
+    margin: 50px 0;
+    font-weight: 900;
+}
+
+.my-restaurant {
+    width: 1084px;
+    margin: 0 auto;
+}
+
+.my-restaurant>div.row {
+    width: 100%;
+    margin: 0 0 20px;
+    border-radius: 15px;
+}
+
+.my-restaurant>div:nth-child(2n+0) {
+    background: lightcyan 0% 0% no-repeat padding-box;
+}
+
+.my-restaurant>div:nth-child(2n+1) {
+    background: honeydew 0% 0% no-repeat padding-box;
+}
+
+.my-restaurant>div.row>div {
+    padding: 0;
+    height: 180px;
+}
+
+.my-restaurant>div.row h3 {
+    text-align: left;
+    font: 33px Muli;
+    font-weight: 900;
+    letter-spacing: 0px;
+    color: #1A1746;
+    margin: 20px 0 0 0;
+    cursor: context-menu;
+}
+
+.my-restaurant>div.row pre {
+    font: 22px/35px Muli;
+    letter-spacing: 0px;
+    font-weight: 600;
+    color: #1A1746;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    cursor: context-menu;
+}
+
+.my-restaurant>div.row span {
+    text-align: center;
+    font: 20px/30px Muli;
+    font-weight: 600;
+    letter-spacing: 0px;
+    color: #888888;
+    margin: 5px 40px 0 0;
+    cursor: context-menu;
+}
+
+.my-restaurant>div.row img {
+    display: block;
+    margin: 15px auto;
+    width: 215px;
+    height: 150px;
+}

@@ -3,7 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Welcome To Kolkata</title>
-	<link rel="stylesheet" href="city.css">
+	<link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/city.css">
 </head>
 <body>
 	 <div class="menu-bar">
@@ -25,7 +27,7 @@
 	<div class="container">
 		<div class="box">
 			<div class="imgBox">
-				<img src="k1.jpg">
+				<img src="img/k1.jpg" alt="">
 			</div>
 			<div class="details">
 				<div class="content">
@@ -35,7 +37,7 @@
 		</div>
 		<div class="box">
 			<div class="imgBox">
-				<img src="k2.jpg">
+				<img src="img/k2.jpg" alt="">
 			</div>
 			<div class="details">
 				<div class="content">
@@ -44,7 +46,7 @@
 			</div></div>
 		<div class="box">
 			<div class="imgBox">
-				<img src="k3.jpg">
+				<img src="img/k3.jpg" alt="">
 			</div>
 			<div class="details">
 				<div class="content">
@@ -53,7 +55,7 @@
 			</div></div>
 		<div class="box">
 			<div class="imgBox">
-				<img src="k4.jpg">
+				<img src="img/k4.jpg" alt="">
 			</div>
 			<div class="details">
 				<div class="content">
@@ -62,7 +64,7 @@
 			</div></div>
 		<div class="box">
 			<div class="imgBox">
-				<img src="k5.jpg">
+				<img src="img/k5.jpg" alt="">
 			</div>
 			<div class="details">
 				<div class="content">
@@ -71,7 +73,7 @@
 			</div></div>
 		<div class="box">
 			<div class="imgBox">
-				<img src="k6.jpg">
+				<img src="img/k6.jpg" alt="">
 			</div>
 			<div class="details">
 				<div class="content">

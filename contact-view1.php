@@ -1,11 +1,14 @@
+<!DOCTYPE html>
+<html>
 
-<?php
+<body>
+    <?php
+    
     $conn = mysqli_connect("localhost","root","");  
     if(! $conn )  
     {  
       die('Could not connect: ' . mysqli_connect_error());  
     }  
-    //echo 'Connected successfully<br/>';  
 
      mysqli_select_db($conn,"reg");
      
@@ -18,25 +21,42 @@
        $name=$_POST["name"];
 
        if (!preg_match("/^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+\.[a-zA-Z.]{2,5}$/",$emailid)) 
-         die("<mark>Correctly enter email address !</mark>");
+         echo("<mark>Correctly enter email address !</mark>");
 
-       if (strlen($feed)>1000)
+       else if (strlen($feed)>1000)
        {
-         die("<mark>Length of suggestion should not be more than 1000 characters.</mark>");
+         echo("<mark>Length of suggestion should not be more than 1000 characters.</mark>");
+       }
+
+       else if (strlen($feed)<1)
+       {
+         echo("<mark>Please write some useful suggestion.</mark>");
        }
 
 
-      if(isset($_POST["sub"]))
+      else if(isset($_POST["sub"]))
       {
        $query="insert into contact_us(name,feedback,email) values('$name','".$feed."','$emailid')";
        if(mysqli_query($conn,$query))
        {
         echo "<h2>Your suggestions have been registered sucessfully !</h2>";
+        
        }
       }
      }
      else
-      die("<mark>Please provide name !</mark>");
+      echo("<mark>Please provide name !</mark>");
      
       mysqli_close($conn);  
-?>
+      
+    ?>
+
+        <script>
+            setTimeout(function() {
+                location.href = 'contact-view.php';
+            }, 2000);
+        </script>
+
+</body>
+
+</html>

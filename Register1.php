@@ -1,5 +1,8 @@
+<!Doctype html>
+<html>
 
-<?php
+<body>
+    <?php
     $conn = mysqli_connect("localhost","root","");  
     if(! $conn )  
     {  
@@ -18,15 +21,15 @@
        $name=$_POST["name"];
 
        if (!preg_match("/^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+\.[a-zA-Z.]{2,5}$/",$emailid)) 
-         die("<mark>Correctly enter email address !</mark>");
+         echo("<mark>Correctly enter email address !</mark>");
 
-       if (strlen($pass)<5)
+       else if (strlen($pass)<5)
        {
-         die("<mark>Length of password should be more than 4.</mark>");
+         echo("<mark>Length of password should be more than 4.</mark>");
        }
 
 
-      if(isset($_POST["signup"]))
+      else if(isset($_POST["signup"]))
       {
        $query="insert into user(name,password,email) values('$name','$pass','$emailid')";
        if(mysqli_query($conn,$query))
@@ -36,7 +39,16 @@
       }
      }
      else
-      die("<mark>Please provide name !</mark>");
-     
+      echo("<mark>Please provide name !</mark>");
+
       mysqli_close($conn);  
-?>
+    ?>
+
+        <script>
+            var t = setTimeout(function() {
+                location.href = 'Register.php';
+            }, 2000);
+        </script>
+</body>
+
+</html>
