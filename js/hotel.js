@@ -21,8 +21,7 @@ function cityFinder() {
             }
         });
         var cityId = locations[i].id;
-        console.log(cityId);
-        return cityId;
+        restaurantSearch(cityId);
     });
 }
 
@@ -69,6 +68,5 @@ function restaurantSearch(cityId) {
 }
 
 $(document).ready(function() {
-    var cityId = cityFinder();
-    restaurantSearch(cityId);
+    cityFinder();
 });
